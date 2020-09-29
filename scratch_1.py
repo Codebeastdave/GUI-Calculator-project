@@ -34,12 +34,10 @@ class ProcessCalc:
         if x.read():
             x.close()
             x = open(r"C:\Users\DAVID\.PyCharmCE2019.1\config\scratches\{0}".format(self.filename), "a")
-            print("false")
         else:
             x.close()
             x = open(r"C:\Users\DAVID\.PyCharmCE2019.1\config\scratches\{0}".format(self.filename),
                      "w")
-            print("falser")
 
         for loop in range(self.calculations):
             self.__input_x = input("x: ")
